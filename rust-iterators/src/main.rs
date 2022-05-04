@@ -1,11 +1,10 @@
 struct CSVIterator<'a> {
-    offset: usize,
     string: &'a str,
 }
 
 impl<'a> CSVIterator<'a> {
     fn new(string: &'a str) -> Self {
-        Self { offset: 0, string }
+        Self { string }
     }
 }
 
